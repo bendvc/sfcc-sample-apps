@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-jp">
-  <defs>
-    <clipPath id="a">
-      <path fill-opacity=".67" d="M177.17 0h708.66v708.66H177.17z"/>
-    </clipPath>
-  </defs>
-  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(-128) scale(.72249)" stroke-width="1pt">
-    <path fill="#fff" d="M0 0h1063v708.66H0z"/>
-    <ellipse cx="523.08" rx="194.93" cy="344.05" transform="translate(-59.707 -34.521) scale(1.1302)" ry="194.93" fill="#d30000"/>
-  </g>
-</svg>
+<svg height="512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m177.17 0h708.66v708.66h-708.66z"/></clipPath><g clip-path="url(#a)" fill-rule="evenodd" stroke-width="1pt" transform="matrix(.72249 0 0 .72249 -128 0)"><path d="m0 0h1063v708.66h-1063z" fill="#fff"/><ellipse cx="523.08" cy="344.05" fill="#d30000" rx="194.93" ry="194.93" transform="matrix(1.1302 0 0 1.1302 -59.707 -34.521)"/></g></svg>

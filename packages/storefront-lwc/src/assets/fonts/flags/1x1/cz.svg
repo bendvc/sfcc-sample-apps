@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-cz">
-  <defs>
-    <clipPath id="a">
-      <path fill-opacity=".67" d="M102.42 0h708.66v708.66H102.42z"/>
-    </clipPath>
-  </defs>
-  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(-74) scale(.722)" stroke-width="1pt">
-    <path fill="#e80000" d="M0 0h1063v708.66H0z"/>
-    <path fill="#fff" d="M0 0h1063v354.33H0z"/>
-    <path d="M0 0l529.732 353.88L0 707.3V0z" fill="#00006f"/>
-  </g>
-</svg>
+<svg height="512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m102.42 0h708.66v708.66h-708.66z"/></clipPath><g clip-path="url(#a)" fill-rule="evenodd" stroke-width="1pt" transform="matrix(.722 0 0 .722 -74 0)"><path d="m0 0h1063v708.66h-1063z" fill="#e80000"/><path d="m0 0h1063v354.33h-1063z" fill="#fff"/><path d="m0 0 529.732 353.88-529.732 353.42z" fill="#00006f"/></g></svg>

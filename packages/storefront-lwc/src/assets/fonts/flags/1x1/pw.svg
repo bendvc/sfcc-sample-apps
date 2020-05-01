@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-pw">
-  <defs>
-    <clipPath id="a">
-      <path fill-opacity=".67" d="M61.722 4.181h170.82v170.82H61.722z"/>
-    </clipPath>
-  </defs>
-  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(-185 -12.531) scale(2.9973)" stroke-width="1pt">
-    <path fill="#4aadd6" d="M0 4.18h301.178V175H0z"/>
-    <path d="M185.863 86.783c0 28.059-23.754 50.805-53.056 50.805-29.302 0-53.055-22.747-53.055-50.805 0-28.06 23.754-50.805 53.055-50.805 29.302 0 53.056 22.746 53.056 50.805z" fill="#ffde00"/>
-  </g>
-</svg>
+<svg height="512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m61.722 4.181h170.82v170.82h-170.82z"/></clipPath><g clip-path="url(#a)" fill-rule="evenodd" stroke-width="1pt" transform="matrix(2.9973 0 0 2.9973 -185 -12.531)"><path d="m0 4.18h301.178v170.82h-301.178z" fill="#4aadd6"/><path d="m185.863 86.783c0 28.059-23.754 50.805-53.056 50.805s-53.055-22.747-53.055-50.805c0-28.06 23.754-50.805 53.055-50.805 29.302 0 53.056 22.746 53.056 50.805z" fill="#ffde00"/></g></svg>
