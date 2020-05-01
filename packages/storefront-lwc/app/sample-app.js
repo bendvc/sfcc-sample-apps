@@ -52,13 +52,13 @@ class SampleApp {
 
     start() {
         let myapp = this;
-        if (this.expressApplication) {
-            this.expressApplication.get('/apiconfig.js', function(req, res) {
-                res.send(
-                    `window.apiconfig={"COMMERCE_API_PATH": "${myapp.apiConfig.config.COMMERCE_API_PATH}"}`,
-                );
-            });
-        }
+        // if (this.expressApplication) {
+        //     this.expressApplication.get('/apiconfig.js', function(req, res) {
+        //         res.send(
+        //             `window.apiconfig={"COMMERCE_API_PATH": "${myapp.apiConfig.config.COMMERCE_API_PATH}"}`,
+        //         );
+        //     });
+        // }
 
         //
         // Start Apollo/GraphQL and register Apollo with Express Middleware
