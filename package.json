@@ -8,6 +8,30 @@
     "lwcVersion": "1.0.1",
     "talonVersion": "0.18.12"
   },
+  "mobify": {
+    "externals": [
+      "jsdom"
+    ],
+    "pageNotFoundURL": "/page-not-found",
+    "ssrEnabled": true,
+    "ssrOnly": [
+      "ssr.js",
+      "ssr.js.map",
+      "node_modules/**/*.*"
+    ],
+    "ssrShared": [
+      "main.css",
+      "static/ico/favicon.ico",
+      "static/robots.txt",
+      "**/*.js",
+      "**/*.js.map",
+      "**/*.json"
+    ],
+    "ssrParameters": {
+      "ssrFunctionNodeVersion": "12.x",
+      "proxyConfigs": []
+    }
+  },
   "scripts": {
     "build": "lerna run build --stream",
     "build:app": "lerna run build --scope storefront-lwc --stream",
