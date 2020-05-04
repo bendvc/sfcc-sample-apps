@@ -24,7 +24,9 @@ import awsServerlessExpress from 'aws-serverless-express';
 // ****************************************************
 import { getSampleApp } from '../app/sample-app.js';
 
+// TODO: Get experimental import meta syntax working if you want rollup to work.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// const __dirname = '/Users/ben/Projects/sfcc-sample-apps/packages/storefront-lwc/scripts'
 
 /**
  * Constants

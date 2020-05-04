@@ -8,6 +8,7 @@ const terser = require('rollup-plugin-terser').terser;
 const commonjs = require('rollup-plugin-commonjs');
 const visualizer = require('rollup-plugin-visualizer');
 const livereload = require('rollup-plugin-livereload');
+const json = require('rollup-plugin-json');
 
 const path = require('path');
 
@@ -26,30 +27,47 @@ const lwcPlugin = lwc({
     rootDir: './src/modules',
 });
 
-module.exports = {
-    input,
-    output: {
-        dir: 'dist',
-        format: 'iife',
-        entryFileNames: isProduction ? 'app-[name]-[hash].js' : 'app.js',
-        sourcemap: true,
+module.exports = [
+    {
+        input,
+        output: {
+            dir: 'dist',
+            format: 'iife',
+            entryFileNames: isProduction ? 'app-[name]-[hash].js' : 'app.js',
+            sourcemap: true,
+        },
+        plugins: [
+            cleanup(),
+            resolve(),
+            html(),
+            copyAssets(),
+            lwcPlugin,
+            commonjs(),
+            replace({ 'process.env.NODE_ENV': JSON.stringify(env) }),
+            isProduction && terser(),
+            isProduction &&
+                visualizer({
+                    gzipSize: true,
+                    filename: 'dist/report.html',
+                }),
+            !isProduction &&
+                livereload({
+                    watch: 'dist',
+                }),
+        ].filter(Boolean),
     },
-    plugins: [
-        cleanup(),
-        resolve(),
-        html(),
-        copyAssets(),
-        lwcPlugin,
-        commonjs(),
-        replace({ 'process.env.NODE_ENV': JSON.stringify(env) }),
-        isProduction && terser(),
-        isProduction &&
-            visualizer({
-                gzipSize: true,
-                filename: 'dist/report.html',
-            }),
-        !isProduction && livereload({
-            watch: 'dist'
-        }),
-    ].filter(Boolean),
-};
+    {
+        input: path.resolve(__dirname, '../src/server.js'),
+        output: {
+            dir: 'build',
+            format: 'cjs',
+            entryFileNames: 'ssr.js',
+        },
+        plugins: [
+            json(),
+            resolve(),
+            commonjs(),
+            replace({ 'process.env.NODE_ENV': JSON.stringify(env) }),
+        ],
+    },
+];
